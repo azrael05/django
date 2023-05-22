@@ -1,0 +1,7 @@
+Open Command Prompt 
+django-admin --> to see all available options
+django-admin startproject <project name> --> to create a new project
+
+python manage.py -> To see all available commands
+python manage.py runserver --> start the server. Defaults to port 8000
+python manage.py runserver <port number> --> Start server at given port
