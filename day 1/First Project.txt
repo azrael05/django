@@ -5,3 +5,33 @@ django-admin startproject <project name> --> to create a new project
 python manage.py -> To see all available commands
 python manage.py runserver --> start the server. Defaults to port 8000
 python manage.py runserver <port number> --> Start server at given port
+pytohn manage.py migrate -> Create default migration
+
+
+model -> data management
+view -> from url calls the respective functions to takes data from model and templates to generate the output which the user sees / interface
+templates -> the html css js files
+
+
+############ Folder Structure   ##########
+mamnge-> the main file
+db.sqlite3-> database mysql default
+the same name folder -> conatins all the details / app
+    settings.py -> all setting related to the project
+    urls.py -> manage all urls
+    create views.py -> for all views, connect with the url.py file
+create folder templates-> html files
+create folder static -> static files
+create folder media -> dyanmmic files
+
+
+
+## How to create Superuser
+python manage.py createsuperuser  then it asks username, email, password, confirm password
+Then you can see the added user in the 'auth user' table in database
+
+
+## How to route urls 
+in the views.py create the desired functions
+in the url.py add the path, the function (and use from <project_name> import views  
+                                            Path("\path",views.<function_name>))
