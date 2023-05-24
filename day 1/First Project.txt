@@ -35,3 +35,15 @@ Then you can see the added user in the 'auth user' table in database
 in the views.py create the desired functions
 in the url.py add the path, the function (and use from <project_name> import views  
                                             Path("\path",views.<function_name>))
+
+    ## Dynamic Routes 
+    It supports three type of data
+    int
+    string
+    slug --> values seperated by dash eg.devesh-kumar-181001
+    int can't accept string and slug
+    string can also accept int and slug but as string
+    slug can also accept both but with condition that only accept - and no other special character
+    
+    Syntax <base url>/< <data type>:<Variable name> >. E.g. hello/<str:user>
+    For unknown data type remove that paramter eg hello/<user> --> This can accept any dtype

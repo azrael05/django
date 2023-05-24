@@ -1,5 +1,5 @@
 """
-URL configuration for first_project project.
+URL configuration for rendering project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,13 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from first_project import views
-
+from rendering import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/',views.hello,name="hello"),
-    path('string/<str:name>',views.string,name="string"),
-    path('int/<int:name>',views.inte,name="int"),
-    path('slug/<slug:name>',views.slug,name="slug"),
-    path('unknown/<name>',views.unknown,name="unknown")
+    path('static_example/',views.stat),
+    path('dynamic_example/<name>',views.dyna)
 ]

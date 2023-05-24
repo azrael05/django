@@ -1,0 +1,57 @@
+<html>
+<head>
+    <style>
+        table {
+            border: 25px solid red;
+}
+    </style>
+</head>
+
+<body>
+
+    <table border="1" > 
+        <tr>
+            <th> Name </th>
+            <th> Phone </th>
+        </tr>
+        {% for stu in table %}
+        <tr>
+            <td>
+                {{stu.name}}
+            </td>
+            <td>
+                {{stu.phone}}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p> {{data}}</p>
+    {% for n in list%}
+    <p>{{n}}</p>
+    {% endfor%}
+
+    {% for n in list%}
+    <p>counter from 1 {{forloop.counter}}</p>
+    {% endfor%}
+
+    {% for n in list%}
+    <p>counter from 0{{forloop.counter0}}</p>
+    {% endfor%}
+
+    {% for n in list%}
+    <p>reverse counter from 1{{forloop.revcounter}}</p>
+    {% endfor%}
+
+    {% for n in list%}
+    <p>reverse counter from 0{{forloop.revcounter0}}</p>
+    {% endfor%}
+    
+    {% for n in list%}
+    <p>start{{forloop.first}}</p>
+    {% endfor%}
+    
+    {% for n in list%}
+    <p>end{{forloop.last}}</p>
+    {% endfor%}
+</body>
+</html>
