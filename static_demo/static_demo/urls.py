@@ -1,5 +1,5 @@
 """
-URL configuration for rendering project.
+URL configuration for static_demo project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,10 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from rendering import views
+from static_demo import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('static_example/',views.stat),
-    path('dynamic_example/<name>',views.dyna),
-    path('if_else/',views.if_else)
+    path('static_demo/',views.static_render)
 ]

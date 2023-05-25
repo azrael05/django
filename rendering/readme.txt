@@ -11,3 +11,14 @@ for args of for loop use {{forloop.counter, forloop.revcounter0}}
 for ending use {% endfor%}
 
 for dictionary we use var.attribute
+
+for if else we use {% if condition sign value %}
+all must be sepeated by space eg i <= 2 need to be used not i<=2 
+for ending if loop we use {% endif %}
+
+for if else 
+{% if statement %}
+    things that would happen if true
+{% else %}
+    THINGS FOR ELSE statement
+{% endif %}
