@@ -19,5 +19,7 @@ from django.urls import path
 from static_demo import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('static_demo/',views.static_render)
+    path('',views.block),
+    path('extend/',views.extend),
+    path('homepage/',views.home,name='home')
 ]
